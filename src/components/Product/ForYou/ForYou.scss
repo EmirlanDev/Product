@@ -1,0 +1,91 @@
+#forYou {
+  position: relative;
+  .forYou {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 90px;
+    h1 {
+      text-align: center;
+      color: #22343d;
+      font-size: 32px;
+      font-weight: 700;
+      width: 483px;
+      margin-bottom: 30px;
+    }
+    &--carts {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      flex-wrap: wrap;
+      &--cart {
+        margin-top: 27px;
+        &--icon {
+          border-radius: 19px;
+          background: #02897a;
+          width: 50px;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+        .first {
+          background: #4d8dff;
+        }
+        .second {
+          background: #740a76;
+        }
+        .third {
+          background: #f03e3d;
+        }
+        h2 {
+          color: #22343d;
+          font-size: 22px;
+          font-weight: 600;
+          margin-top: 30px;
+        }
+        p {
+          color: #22343d;
+          line-height: 26px;
+          margin-top: 13px;
+          width: 240px;
+        }
+      }
+    }
+    button {
+      color: #fff;
+      font-weight: 700;
+      border-radius: 4px;
+      background: #02897a;
+      padding: 15px 32px 14px 34px;
+      margin-top: 34px;
+      z-index: 10;
+    }
+  }
+  .ten {
+    position: absolute;
+    // top: 183px;
+    bottom: -90px;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 578px) {
+  #forYou {
+    .forYou {
+      h1 {
+        width: 331px;
+      }
+      &--carts {
+        justify-content: center;
+        &--cart {
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
